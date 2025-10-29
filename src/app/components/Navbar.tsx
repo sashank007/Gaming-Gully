@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6 lg:gap-8">
         <a href="#home" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">Home</a>
-        <a href="#menu" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">VR Games</a>
         <a href="#about" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">About Us</a>
+        <a href="#follow" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">Follow Us</a>
       </div>
 
       {/* Mobile Menu */}
@@ -30,8 +30,8 @@ const Navbar: React.FC = () => {
         <div className="absolute top-full left-0 right-0 bg-black border-b border-gray-800 md:hidden">
           <div className="flex flex-col p-4 space-y-4">
             <a href="#home" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="#menu" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>VR Games</a>
             <a href="#about" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>About Us</a>
+            <a href="#follow" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>Follow Us</a>
           </div>
         </div>
       )}

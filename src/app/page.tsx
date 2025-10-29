@@ -10,8 +10,14 @@ const Home: React.FC = () => {
       <section id="home" className="relative flex flex-col items-center justify-center min-h-screen pt-24 md:pt-32 px-4">
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-transparent via-black/50 to-black z-0"></div>
         
+        {/* Main Heading */}
         <div className="z-10 text-center mb-6 md:mb-8">
-          {/* Optional heading - currently commented */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-3 md:mb-4 tracking-tight">
+            <span className="text-[#c8ff00]">STEP INTO THE FUTURE</span>
+          </h1>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-white mb-6 md:mb-8">
+            PLAY IN VR AT COMIC-CON!
+          </h2>
         </div>
 
         <div className="z-10 max-w-4xl w-full mb-6 md:mb-8 px-2">
@@ -83,13 +89,8 @@ const Home: React.FC = () => {
               </a>
             </div>
           </div>
-          {/* Step Into The Future */}
+          {/* VR Experience Options */}
           <div className="z-10 w-full max-w-6xl mt-12 md:mt-16 px-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-3 md:mb-4 text-center">
-              <span className="text-[#c8ff00]">STEP INTO THE FUTURE</span>
-            </h2>
-            <p className="text-xl sm:text-2xl md:text-3xl text-white text-center mb-8 md:mb-12 font-bold">PLAY IN VR AT COMIC-CON!</p>
-            
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
               <div className="bg-gradient-to-br from-gray-900 to-black border-2 md:border-4 border-[#c8ff00] p-6 md:p-8 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
                 <div className="text-4xl md:text-5xl lg:text-6xl mb-3 md:mb-4">⚡</div>
@@ -139,7 +140,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Games at Comic-Con Section */}
-      <section id="menu" className="py-16 md:py-32 px-4 md:px-8 bg-gradient-to-b from-black to-gray-900">
+      {/* <section id="menu" className="py-16 md:py-32 px-4 md:px-8 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-center">VR Games at <span className="text-[#c8ff00]">Comic-Con</span></h2>
           <p className="text-center text-lg md:text-xl text-gray-400 mb-8 md:mb-16">Experience these incredible VR titles at our booth!</p>
@@ -176,7 +177,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Event Details Section - Now moved to hero section */}
 
@@ -198,16 +199,17 @@ const Home: React.FC = () => {
             >
               🎟️ BOOK PASSES NOW
             </a>
-            <button className="px-8 md:px-10 py-4 md:py-5 bg-transparent border-4 border-white text-white font-black text-lg md:text-xl rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-110">
+            {/* <button className="px-8 md:px-10 py-4 md:py-5 bg-transparent border-4 border-white text-white font-black text-lg md:text-xl rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-110">
               📧 CONTACT US
-            </button>
+            </button> */}
           </div>
 
           {/* Instagram Follow Section */}
-          <div className="mt-12 md:mt-16 bg-gradient-to-br from-gray-900 to-black border-4 border-[#c8ff00] p-6 md:p-12 rounded-2xl">
+          <div id="follow" className="mt-12 md:mt-16 bg-gradient-to-br from-gray-900 to-black border-4 border-[#c8ff00] p-6 md:p-12 rounded-2xl scroll-mt-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4 md:mb-6 text-[#c8ff00]">📱 FOLLOW US ON INSTAGRAM</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-black mb-4 md:mb-6 text-[#c8ff00]">
+                   FOLLOW US ON INSTAGRAM</h3>
                 <p className="text-xl md:text-2xl text-white mb-3 md:mb-4 font-bold">Stay Updated!</p>
                 <p className="text-base md:text-lg lg:text-xl text-gray-300 mb-4 md:mb-6">
                   Follow us for exclusive updates on what we're doing next and where we're going!
@@ -218,18 +220,23 @@ const Home: React.FC = () => {
                   <li>📍 Upcoming events & locations</li>
                   <li>🎁 Exclusive giveaways & prizes</li>
                 </ul>
-                <p className="text-[#c8ff00] font-bold text-lg md:text-xl">👉 Scan the QR code to follow us!</p>
+                <p className="text-[#c8ff00] font-bold text-lg md:text-xl">Scan the QR code to follow us!</p>
               </div>
               
               <div className="flex justify-center">
-                <div className="bg-white p-4 md:p-6 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <a 
+                  href="https://www.instagram.com/gaminggully.vr/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white p-4 md:p-6 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300 cursor-pointer"
+                >
                   <img 
                     src="/images/qr_code_insta_design.jpeg" 
                     alt="Follow us on Instagram - QR Code" 
                     className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 object-contain"
                   />
-                  <p className="text-center text-black font-bold mt-3 md:mt-4 text-base md:text-lg">Scan to Follow!</p>
-                </div>
+                  <p className="text-center text-black font-bold mt-3 md:mt-4 text-base md:text-lg">Scan or Click to Follow!</p>
+                </a>
               </div>
             </div>
           </div>
@@ -245,7 +252,7 @@ const Home: React.FC = () => {
             <p className="text-gray-400 mt-2 text-sm md:text-base">Step Into The Future | Play In VR</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8 text-center">
             <div>
               <h4 className="text-[#c8ff00] font-bold mb-2 text-base md:text-lg">Event</h4>
               <p className="text-gray-400 text-sm md:text-base">Comic-Con Hyderabad 2025</p>
@@ -256,10 +263,19 @@ const Home: React.FC = () => {
               <p className="text-gray-400 text-sm md:text-base">Booth A29, HITEX</p>
               <p className="text-gray-400 text-sm md:text-base">Maruti Suzuki Arena</p>
             </div>
-            <div className="sm:col-span-2 md:col-span-1">
+            <div>
               <h4 className="text-[#c8ff00] font-bold mb-2 text-base md:text-lg">Book Passes</h4>
               <a href="https://www.district.in/events/hyderabad-comic-con-2025-1-buy-tickets" target="_blank" rel="noopener noreferrer" className="text-[#c8ff00] hover:text-white text-sm md:text-base">
                 district.in
+              </a>
+            </div>
+            <div>
+              <h4 className="text-[#c8ff00] font-bold mb-2 text-base md:text-lg">Contact Us</h4>
+              <a href="mailto:gaminggullyvr@gmail.com" className="text-gray-400 hover:text-[#c8ff00] text-sm md:text-base block mb-1">
+                📧 gaminggullyvr@gmail.com
+              </a>
+              <a href="https://instagram.com/gaminggully.vr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#c8ff00] text-sm md:text-base block">
+                📱 @gaminggully.vr
               </a>
             </div>
           </div>
