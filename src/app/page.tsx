@@ -307,14 +307,10 @@ const Home: React.FC = () => {
                 <p className="text-gray-400 mb-4">
                   We brought immersive VR experiences to Comic-Con Hyderabad at HITEX. Visitors experienced quick demos, intense VR battles, and full adventure sessions at our booth.
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
                   <div>
                     <p className="text-[#c8ff00] font-bold text-lg">Oct 31 - Nov 2</p>
                     <p className="text-gray-500 text-sm">Dates</p>
-                  </div>
-                  <div>
-                    <p className="text-[#c8ff00] font-bold text-lg">Booth A29</p>
-                    <p className="text-gray-500 text-sm">Location</p>
                   </div>
                   <div>
                     <p className="text-[#c8ff00] font-bold text-lg">HITEX</p>
