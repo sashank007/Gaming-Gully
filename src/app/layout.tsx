@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gaming Gully VR at Comic-Con Hyderabad 2025 | Booth A29",
-  description: "Visit Gaming Gully VR at Comic-Con Hyderabad 2025! Experience cutting-edge VR gaming at Booth A29, HITEX. Oct 31-Nov 2. Demos, battles, adventures & prizes!",
+  title: "Gaming Gully VR | India's Premier Event-Based VR Company",
+  description: "Gaming Gully VR brings immersive virtual reality experiences to events, exhibitions, and venues across India. Experience cutting-edge VR gaming with friends and family.",
   icons: {
     icon: '/images/gaming_gully_bw.png',
   },

@@ -9,9 +9,9 @@ const Navbar: React.FC = () => {
       <div className="flex items-center">
         <img src="/images/gaming_gully_logo.jpg" alt="Gaming Gully Logo" className="h-12 md:h-16" />
       </div>
-      
+
       {/* Mobile Menu Button */}
-      <button 
+      <button
         className="md:hidden text-[#c8ff00] text-2xl"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -21,8 +21,9 @@ const Navbar: React.FC = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6 lg:gap-8">
         <a href="#home" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">Home</a>
-        <a href="#about" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">About Us</a>
-        <a href="#follow" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">Follow Us</a>
+        <a href="#experiences" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">Experiences</a>
+        <a href="#past-events" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">Past Events</a>
+        <a href="#subscribe" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium">Subscribe</a>
       </div>
 
       {/* Mobile Menu */}
@@ -30,8 +31,9 @@ const Navbar: React.FC = () => {
         <div className="absolute top-full left-0 right-0 bg-black border-b border-gray-800 md:hidden">
           <div className="flex flex-col p-4 space-y-4">
             <a href="#home" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="#about" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>About Us</a>
-            <a href="#follow" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>Follow Us</a>
+            <a href="#experiences" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>Experiences</a>
+            <a href="#past-events" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>Past Events</a>
+            <a href="#subscribe" className="hover:text-[#c8ff00] transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>Subscribe</a>
           </div>
         </div>
       )}
